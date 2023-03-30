@@ -1,0 +1,1 @@
+<?php $zo="Asia/Jakarta"; ?>
