@@ -138,14 +138,16 @@ for ($i=3; $i<=$baris; $i++)
   } elseif($hasillevel<1){ 
   echo "<tr><td>Gagal Insert data Siswa <b>$xnama</b>&nbsp;&nbsp;</td><td><font color=red> Kode Level $xlevel</font> Tidak Sesuai dengan Database Kelas</td> </tr>";
   $gagal++;
-  } elseif($hasilnamakelas<1){ 
-  echo "<tr><td>Gagal Insert data Siswa <b>$xnama</b>&nbsp;&nbsp;</td><td><font color=red> Nama Kelas$xnakel</font> Tidak Sesuai dengan Database Kelas</td> </tr>";
-  $gagal++;
-  } else {  	  
+    } 
+//   elseif($hasilnamakelas<1){ 
+//   echo "<tr><td>Gagal Insert data Siswa <b>$xnama</b>&nbsp;&nbsp;</td><td><font color=red> Nama Kelas$xnakel</font> Tidak Sesuai dengan Database Kelas</td> </tr>";
+//   $gagal++;
+//   }
+     else {  	  
   	  // setelah data dibaca, sisipkan ke dalam tabel mhs
 		  $query = "INSERT INTO cbt_siswa (XNomerUjian, XNIK,XSesi,XRuang, XNamaSiswa,XKodeKelas, XJenisKelamin, XPassword, XKodeJurusan,
-		  XKodeLevel, XFoto,XAgama,XSetId,XKodeSekolah,XPilihan,XNamaKelas) 
-		  VALUES ('$xnomer', '$xnik','$xsesi', '$xruang', '$xnama','$xkelas','$xjekel','$xpass','$xjur','$xlevel','$xfoto','$xagama','$_COOKIE[beetahun]','$xidsek','$xpilih','$xnakel')";
+		  XKodeLevel, XFoto,XAgama,XSetId,XKodeSekolah,XPilihan) 
+		  VALUES ('$xnomer', '$xnik','$xsesi', '$xruang', '$xnama','$xkelas','$xjekel','$xpass','$xjur','$xlevel','$xfoto','$xagama','$_COOKIE[beetahun]','$xidsek','$xpilih')";
 		  $hasil = mysql_query($query);
   $sukses++;
   

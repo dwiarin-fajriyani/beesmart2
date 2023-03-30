@@ -252,7 +252,7 @@ $r = mysql_fetch_array($sql);
 </div>
 <footer>
     <div class="container" style=" font-size:12px">
-        <p><?php echo strtoupper("$r[XSekolah]"); ?> | Supported by ICT SMKN 2 SUMEDANG</p>
+        <p><?php echo strtoupper("$r[XSekolah]"); ?> | Supported by Divisi IT SMKN 2 Sumedang</p>
     </div>
 </footer>
 

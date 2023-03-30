@@ -14,7 +14,7 @@ header('Location:login.php?salah=2');}
  } else {	 
  //$user = "$_REQUEST[UserName]";
  $txtuser = str_replace(" ","",$_REQUEST['UserName']);
- $txtpass = str_replace(" ","",md5($_REQUEST['Password']));
+ $txtpass = str_replace(" ","",$_REQUEST['Password']);
  setcookie('PESERTA',$txtuser);
  setcookie('KUNCI',$txtpass);
  $user = "$txtuser";
@@ -337,7 +337,7 @@ if($sqlcekujian>0){ ?>
 
 <footer>
     <div class="container" style=" font-size:12px">
-        <p><?php echo strtoupper("$r[XSekolah]"); ?> | Supported by BEESMART</p>
+        <p><?php echo strtoupper("$r[XSekolah]"); ?> | Supported by Divisi IT SMKN 2 Sumedang</p>
     </div>
 </footer>
     <script src="js/jquery.cookie.js"></script>

@@ -120,7 +120,7 @@ $sqlcek = mysql_num_rows(mysql_query("select * from cbt_ujian where XTokenUjian 
 				'$s[XKodeSoal]','1','$s[XGuru]','$_COOKIE[beetahun]','$_REQUEST[txt_sesi]','$val_pilganda','$val_esai','$xlambat',
 				'$_REQUEST[txt_statustoken]','$_REQUEST[txt_pdf]','$_REQUEST[txt_filepdf]','$_REQUEST[txt_listen]')");
 				echo "<div class='alert alert-success alert-dismissable' id='ndelik'>
-                               Data gagallllll 
+                               Data berhasil disimpan 
                             </div>     ";
 
 	}
