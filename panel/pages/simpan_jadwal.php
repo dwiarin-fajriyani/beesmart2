@@ -112,14 +112,14 @@ $sqlcek = mysql_num_rows(mysql_query("select * from cbt_ujian where XTokenUjian 
 	if($sqlcek>0){echo "<div class='alert alert-danger alert-dismissable' id='ndelik'>Simpan Data Gagal Token Sudah ada.</div>     ";
 	} else {
 				$sqlinsert = mysql_query("insert into cbt_ujian 						  
-				(XKodeKelas,XKodeUjian,XSemester,XKodeJurusan,XJumPilihan,XAcakSoal,XKodeMapel,XTampil,
+				(XKodeKelas,XKodeUjian,XSemester,XLevel, XKodeJurusan,XJumPilihan,XAcakSoal,XKodeMapel,XTampil,
 				 XTokenUjian,XTglUjian,XJamUjian,XLamaUjian,XBatasMasuk,XJumSoal
 				,XKodeSoal,XStatusUjian,XGuru,XSetId,XSesi,XPilGanda,XEsai,XLambat,XStatusToken,XPdf,XFilePdf,XListening) values 		
-				('$s[XKodeKelas]','$_REQUEST[txt_ujian]','$_REQUEST[txt_semester]','$s[XKodeJurusan]','$s[XJumPilihan]',
+				('$s[XKodeKelas]','$_REQUEST[txt_ujian]','$_REQUEST[txt_semester]','XII', '$s[XKodeJurusan]','$s[XJumPilihan]',
 				'$s[XAcakSoal]','$s[XKodeMapel]','$_REQUEST[txt_hasil]','$_REQUEST[txt_token]','$tgl','$jam','$jame','$jamet','$ambilsoal',
 				'$s[XKodeSoal]','1','$s[XGuru]','$_COOKIE[beetahun]','$_REQUEST[txt_sesi]','$val_pilganda','$val_esai','$xlambat',
 				'$_REQUEST[txt_statustoken]','$_REQUEST[txt_pdf]','$_REQUEST[txt_filepdf]','$_REQUEST[txt_listen]')");
-				echo "<div class='alert alert-success alert-dismissable' id='ndelik'>
+				echo "<div class='alert alert-success alert-dismissable' id='ndelik'>	
                                Data berhasil disimpan 
                             </div>     ";
 
